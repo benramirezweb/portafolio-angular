@@ -1,0 +1,93 @@
+.male{
+    color: rgb(30, 224, 159);
+}
+.female{
+    color: rgb(255, 162, 133);
+}/* You can add global styles to this file, and also import other style files */
+.conts{
+    padding: 20px;
+    background: gainsboro;
+    width: 100%;
+    box-sizing: border-box;
+}
+.estilo1{
+    color: red;
+}
+.estilo2{
+    color: rgb(166, 255, 0);
+}
+.estilo3{
+    color: rgb(90, 197, 247);
+    transition: color .5s;
+    cursor: pointer;
+}
+.estilo4{
+    color: rgb(253, 82, 245);
+    transition: color .5s;
+    cursor: pointer;
+}
+.estilo5{
+    color: rgb(4, 252, 115);
+    
+}
+[ng-class-even="estilo4"]{
+    color: rgb(253, 82, 245);
+}
+.h{
+    color: rgb(0, 153, 255);
+}
+.m{
+    color: coral
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+table{
+    width: 100%;
+}
+table thead{
+    background: rgb(221, 221, 221);
+}
+table tr td{
+    padding: 10px;
+    width: 33.3%;
+}
+table tbody tr:nth-child(odd){
+   background: rgb(243, 243, 243);
+}
+.caja-busqueda{
+    background: darkgray;
+    padding: 20px;
+    box-sizing: border-box;
+}
+input{
+    border: gainsboro solid 1px;
+    padding: 15px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box{
+    box-sizing: border-box;
+    width: 25%;
+    padding: 50px;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+}
+.box.web{
+    background: darkkhaki;
+}
+.box.ilustracion{
+    background: rgb(158, 152, 61);
+}
+.box.editorial{
+    background: rgb(153, 150, 105);
+}

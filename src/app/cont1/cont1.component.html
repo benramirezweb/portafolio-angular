@@ -1,0 +1,41 @@
+<div class="conts">
+<h1>
+  Soy Cont 1 COMPONENT
+  <h2>---</h2>
+  <p>Product Details: {{id}}</p>
+
+  <router-outlet></router-outlet>
+  <h2>---</h2>
+</h1>
+<a [routerLink]="['cont1a', 'testParam']">cont1a</a>
+<a [routerLink]="['cont1b', 'testParamB']">cont1b</a>
+<h2>
+  datos
+</h2>
+<ul>
+  <li>
+    <p>Nombre: {{ servLocal.datos }}</p>
+  </li>
+  <li>
+    <p>Apellido: {{ servLocal.data.titulo }}</p>
+  </li>
+  <li>
+    <p>Email: {{servLocal.data.email}}</p>
+  </li>
+  <li>
+    <p>Facebook: {{servLocal.data.email}}</p>
+  </li>
+  <li>
+    <p>Instagram: {{servLocal.data.instagram}} </p>
+  </li>
+  <li>
+    <p>Tumbl: {{servLocal.data.tublr}}</p>
+  </li>
+  <li>
+    <p>Año: {{anio}}</p>
+  </li>
+  <li>
+    <p>Mas datos: Pepito</p>
+  </li>
+</ul>
+</div>

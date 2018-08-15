@@ -1,0 +1,61 @@
+<div id="demo"></div>
+<ul>
+    <li *ngFor="let pais of paises">{{pais.capital}}, {{pais.name}}</li>
+</ul>
+<div class="caja-busqueda">
+    <input type="text" 
+            placeholder="Buscar" 
+            (keyup.enter)="buscar(mamada.value)" 
+            #mamada>
+    <div class="cont">
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box ilustracion">
+            <p>Ilustración</p>
+        </div>
+        <div class="box editorial">
+            <p>Editorial</p>
+        </div>
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box ilustracion">
+            <p>Ilustración</p>
+        </div>
+        <div class="box ilustracion">
+            <p>Ilustración</p>
+        </div>
+        <div class="box ilustracion">
+            <p>Ilustración</p>
+        </div>
+        <div class="box editorial">
+            <p>Editorial</p>
+        </div>
+        <div class="box editorial">
+            <p>Editorial</p>
+        </div>
+        <div class="box editorial">
+            <p>Editorial</p>
+        </div>
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box weilustracionb">
+            <p>Ilustración</p>
+        </div>
+        <div class="box web">
+            <p>Web</p>
+        </div>
+        <div class="box web">
+            <p>Ilustración</p>
+        </div>
+
+    </div>
+</div>

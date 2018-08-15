@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<div>
+    <h2>Lista {{title}}:</h2>
+    <ul>
+        <li *ngFor="let item of items" [ngClass]="{'estilo3': true}">
+            {{item}}
+        </li>
+    </ul>
+    <button (click)="metodo1()">Boton 1</button>
+    <h3>
+        Hola este es el contador: {{contador}}
+    </h3>
+    <h4 *ngIf="indicador">
+        Valor 1
+    </h4>
+    <h4 *ngIf="!indicador">
+        Valor 2
+    </h4>
+    <button (click)="homeElements.metodoHome1()">
+        LLamar Home Metodo1
+    </button>
+    <button (click)="acercaElements.acercaMetodo1()">
+        {{acercaElements.a}}
+    </button>
+    <h5>
+        {{acercaElements.b}}
+    </h5>
+    <div [ngClass]="{'estilo1': true}">
+        DIV 1
+    </div>
+    <div [ngClass]="{'estilo2': true}">
+        DIV 2
+    </div>
+    <div [ngClass]="{'estilo3': bool, 'estilo4': !bool}" (click)="cambiaBool()">
+        <span *ngIf="bool">
+            Soy icon 1
+        </span>
+        <span *ngIf="!bool">
+            Soy icon 2
+        </span>
+        DIV 3
+
+    </div>
+    <div [ngClass]="{'estilo4': true}">
+        DIV 4
+    </div>
+    <div [ngClass]="{'estilo5': true}">
+        DIV 5
+    </div>
+</div>
